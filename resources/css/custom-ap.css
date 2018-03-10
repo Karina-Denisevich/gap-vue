@@ -1,0 +1,165 @@
+.top-buffer {
+    margin-top: 30px !important;
+}
+
+.footer {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    height: 35px;
+    background-color: black;
+}
+
+.body-home {
+    /*background: url("../../resources/img/body/full_m1fOZwnQ.jpg") no-repeat top center scroll;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    top: 46px;
+    bottom: 70px;
+    height: calc(100% - 70px);
+    width: 100%;
+    position: absolute;
+
+}
+
+.home-image{
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.home-image img{
+    width: 100%;
+    position: fixed;
+}
+
+
+.table-alert {
+    top: 40px;
+}
+
+.changed {
+    background-color: orange;
+    top: 140px;
+    font-size: large;
+}
+
+.dataTables_wrapper.no-footer {
+    top: 40px;
+    padding-bottom: 45px;
+    margin-right: 8px;
+    margin-left: 6px;
+}
+
+select.selectpicker {
+    display: block !important;
+}
+
+/*.odd-table-element {*/
+/*background-color: #5bc0de;*/
+/*border-bottom: solid 1px darkblue;*/
+/*}*/
+
+/*.even-table-element {*/
+/*background-color: #c09853;*/
+/*border-bottom: solid 1px darkblue;*/
+/*}*/
+
+/*#table-id {*/
+/*border: solid 1px darkblue;*/
+/*}*/
+
+td button {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+td button.btn-danger {
+    background-color: #bd0404 !important;
+}
+
+td button.btn-success {
+    background-color: #168e1c !important;
+}
+
+.btn.dropdown-toggle.btn-primary {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+.actions {
+    width: 15%;
+}
+
+#custom-search-input {
+    /*padding: 3px;*/
+    /*border: solid 1px #E4E4E4;*/
+    /*border-radius: 6px;*/
+    /*background-color: #fff;*/
+}
+
+#custom-search-input input {
+    border: 0;
+    box-shadow: none;
+    height: 29px;
+    width: 250px;
+}
+
+#custom-search-input button {
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover {
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search {
+    font-size: 23px;
+}
+
+.custom-form-group input.form-control {
+    height: 11%;
+    width: 80%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+.custom-form-group-signup input.form-control {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.form-control.input-lg{
+    margin-bottom: 0;
+}
+
+#app-table{
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app-table #content{
+    bottom: 30px;
+}
+
+.edit-btn{
+    margin-right: 15px!important;
+    margin-left: 15px!important;
+}
+
+.vuetable button.ui.button {
+    padding: .5em .5em;
+    font-weight: 400;
+}
+
+
