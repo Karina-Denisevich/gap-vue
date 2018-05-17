@@ -30,6 +30,7 @@
 
 <script>
     import auth from '../auth'
+    import git from '../git'
     export default {
         watch: {
             'perPage': function (val, oldVal) {
@@ -38,6 +39,7 @@
         },
         data() {
             return {
+                repoData: '',
                 url: 'http://localhost:8082/api/git/' + this.query,
                 perPage: 10,
                 columns: [
@@ -93,10 +95,12 @@
         },
         events: {
             'vuetable:action': function (action, data) {
-                alert('vuetable:action', action, data)
-                if (action == 'view-item') {
-                    this.viewProfile(data.id)
-                }
+               // if(auth.checkAuth()){
+
+
+                            git.goToRepo(data.owner, data.name);
+
+               // }
             },
             'vuetable:load-error': function (response) {
                 alert('Load Error: ', response)

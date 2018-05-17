@@ -46,7 +46,7 @@
         },
         methods: {
             showTable(){
-                this.show = true
+                this.show = true;
                 this.$children[0].changeUrl();
 
             }

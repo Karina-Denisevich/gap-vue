@@ -24,16 +24,15 @@
 
 }
 
-.home-image{
+.home-image {
     width: 100%;
     height: calc(100% - 70px);
 }
 
-.home-image img{
+.home-image img {
     width: 100%;
     position: fixed;
 }
-
 
 .table-alert {
     top: 40px;
@@ -138,28 +137,55 @@ td button.btn-success {
     margin-right: 5px;
 }
 
-.form-control.input-lg{
+.form-control.input-lg {
     margin-bottom: 0;
 }
 
-#app-table{
+#app-table {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-#app-table #content{
+#app-table #content {
     bottom: 30px;
 }
 
-.edit-btn{
-    margin-right: 15px!important;
-    margin-left: 15px!important;
+.edit-btn {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
 }
 
 .vuetable button.ui.button {
     padding: .5em .5em;
     font-weight: 400;
+}
+
+.file-wrap {
+    margin-top: 2%;
+}
+
+.new-discussion-timeline{
+    margin-left: 16%;
+}
+
+.highlight-code{
+    background-color: #fddc0654;
+}
+
+#save-lines__btn{
+    width: 80px;
+    font-size: 10px;
+}
+
+#save-lines__div{
+    margin-left: -60px;
+    margin-top: -25px;
+}
+
+.cust-container-top-buttom{
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 

@@ -149,7 +149,7 @@
                             user.deleteUser(this, auth.user.id)
                                 .then(result => {
                                         auth.logout(true);
-                                        router.go('login')
+                                        router.go('/login')
                                     },
                                     error => {
                                         this.error = error;

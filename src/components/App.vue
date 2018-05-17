@@ -8,31 +8,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" v-link="'home'"><span class="sap">j</span> Developers</a>
+                <a class="brand" v-link="'/home'"><span class="sap">j</span> Developers</a>
 
                 <div class="nav-collapse collapse pull-right">
                     <ul class="nav">
                         <li v-bind:class="{ active: isActive('/admin-home') }"
                             v-if="user.authorities.indexOf('ROLE_ADMIN') > -1">
-                            <a v-link="'admin-home'">Admin Home</a>
+                            <a v-link="'/admin-home'">Admin Home</a>
                         </li>
 
                         <li v-bind:class="{ active: isActive('/home') }"
                             v-if="user.authorities.indexOf('ROLE_ADMIN') == -1">
-                            <a v-link="'home'">Home</a>
+                            <a v-link="'/home'">Home</a>
                         </li>
 
                         <li v-bind:class="{ active: isActive('/login') }" v-if="!user.authenticated">
-                            <a v-link="'login'">Login</a>
+                            <a v-link="'/login'">Login</a>
                         </li>
 
                         <li v-bind:class="{ active: isActive('/signup') }" v-if="!user.authenticated">
-                            <a v-link="'signup'">Sign Up</a>
+                            <a v-link="'/signup'">Sign Up</a>
                         </li>
 
                         <li v-bind:class="{ active: isActive('/bookmarks') }"
                             v-if="user.authorities.indexOf('ROLE_ADMIN') == -1 && user.authenticated">
-                            <a v-link="'bookmarks'">Bookmarks</a>
+                            <a v-link="'/bookmarks'">Bookmarks</a>
                         </li>
 
                         <li class="dropdown" v-if="user.authenticated">
@@ -40,11 +40,11 @@
                                aria-expanded="false">{{user.username }}<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li v-bind:class="{ active: isActive('/personal-info') }">
-                                    <a v-link="'personal-info'">PersonalInfo</a>
+                                    <a v-link="'/personal-info'">PersonalInfo</a>
                                 </li>
                                 <li role="separator" class="divider"></li>
                                 <li v-bind:class="{ active: isActive('/logout') }">
-                                    <a @click="logout()" v-link="'login'">Logout</a>
+                                    <a @click="logout()" v-link="'/login'">Logout</a>
                                 </li>
                             </ul>
                         </li>

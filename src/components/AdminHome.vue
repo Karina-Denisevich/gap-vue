@@ -123,10 +123,10 @@
                                         }, 3000);
                                         for (var i = 0; i < vm.rows.length; i++) {
                                             if (id === vm.rows[i][0]) {
-                                                vm.rowsCopy.splice(i, 1)
-                                                vm.rows.splice(i, 1)
+                                                vm.rowsCopy.splice(i, 1);
+                                                vm.rows.splice(i, 1);
                                                 adminTable.redrawTable(vm)
-                                                vm.addStyles();
+                                                adminTable.addStyles(vm);
                                                 break;
                                             }
                                         }

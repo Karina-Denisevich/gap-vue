@@ -2,7 +2,7 @@
 
     <div class="register-box">
         <div class="register-logo">
-            <a v-link="'home'"><b>Assistant Programmer</b></a>
+            <a v-link="'/home'"><b>Assistant Programmer</b></a>
         </div>
         <div class="register-box-body">
             <p class="login-box-msg">Register a new membership</p>

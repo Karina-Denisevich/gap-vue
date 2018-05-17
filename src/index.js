@@ -7,6 +7,9 @@ import Search from './components/Search.vue'
 import Bookmarks from './components/Bookmarks.vue'
 import Signup from './components/Signup.vue'
 import Login from './components/Login.vue'
+import Repo from './components/Repo.vue'
+import Tree from './components/Tree.vue'
+import File from './components/File.vue'
 import auth from './auth'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
@@ -35,8 +38,6 @@ Vue.component('vuetable-pagination-dropdown', VuetablePaginationDropdown)
 
 export var router = new VueRouter()
 
-
-
 router.map({
     '/home': {
         component: Home,
@@ -64,7 +65,19 @@ router.map({
     '/bookmarks': {
         component: Bookmarks,
         authenticatedOnly: true
-    }
+    },
+    '/repo/:owner/:reponame': {
+        component: Repo,
+        authenticatedOnly: true
+    },
+    '/repo/:owner/:reponame/tree/master/*+': {
+        component: Tree,
+        authenticatedOnly: true
+    },
+    '/repo/:owner/:reponame/blob/master/*+': {
+        component: File,
+        authenticatedOnly: true
+    },
 })
 
 

@@ -3,7 +3,7 @@
     <div class="hold-transition">
         <div class="login-box">
             <div class="login-logo">
-                <a v-link="'home'"><b>Assistant Programmer</b></a>
+                <a v-link="'/home'"><b>Assistant Programmer</b></a>
             </div>
             <div class="login-box-body">
                 <p class="login-box-msg">Log in to your account to start your session.</p>
@@ -50,7 +50,7 @@
                     username: this.credentials.username,
                     password: this.credentials.password
                 }
-                var redirect = auth.user.authorities.indexOf('ROLE_ADMIN') > -1 ? 'admin-home' : 'home';
+                var redirect = auth.user.authorities.indexOf('ROLE_ADMIN') > -1 ? '/admin-home' : '/home';
                 auth.login(this, credentials, redirect)
             }
         }

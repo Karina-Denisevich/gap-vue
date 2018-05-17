@@ -1,4 +1,3 @@
-import {router} from '../index'
 import auth from '../auth'
 
 const API_URL = 'http://localhost:8082/'
@@ -51,6 +50,18 @@ export default {
                 url: USERS_URL,
                 method: 'GET',
                 headers: auth.getAuthHeader()
+            }).then((data) => {
+                resolve(data)
+            }, error => {
+                reject(error)
+            });
+        });
+    },
+
+    getBookmarks(context, userId){
+        return new Promise(function (resolve, reject) {
+            context.$http.get({
+                url: USERS_URL + 'bookmarks/' + userId, method: 'GET', headers: auth.getAuthHeader()
             }).then((data) => {
                 resolve(data)
             }, error => {
