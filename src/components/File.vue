@@ -116,7 +116,6 @@
         }
 
         $('.file-save-info').on('click', '#save-lines__btn', function () {
-            alert(start + '  ' + end);
 
             var linesInfo = {
                 text: code.join(''),
@@ -129,7 +128,6 @@
 
                 },
                 error => {
-                    alert(error)
                 }
             );
         })

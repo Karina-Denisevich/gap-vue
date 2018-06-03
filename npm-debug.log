@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle vue-assistant-programmer@1.0.0~predev: vue-assistant-programmer@1.0.0
+6 silly lifecycle vue-assistant-programmer@1.0.0~predev: no script for predev, continuing
+7 info lifecycle vue-assistant-programmer@1.0.0~dev: vue-assistant-programmer@1.0.0
+8 verbose lifecycle vue-assistant-programmer@1.0.0~dev: unsafe-perm in lifecycle true
+9 verbose lifecycle vue-assistant-programmer@1.0.0~dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\Users\Karina\Desktop\kurs\vue\vue-jwt-authentication\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files\Broadcom\WHL\;C:\Program Files\Broadcom\WHL\syswow64;C:\Program Files\Broadcom\WHL\SysWow64\;C:\Program Files\Broadcom\WHL\SysWow64\syswow64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Common Files\Lenovo;C:\Program Files (x86)\Windows Live\Shared;C:\SWTOOLS\ReadyApps;C:\Program Files (x86)\Intel\Services\IPT\;C:\Program Files (x86)\Common Files\Lenovo;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\MASM32\bin;d:\mathlab\bin\win32;C:\Program Files\MATLAB\R2015b\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Users\Karina\AppData\Local\GitHub\PortableGit_c7e0cbde92ba565cb218a521411d0e854079a28c\bin;C:\Users\Karina\AppData\Local\GitHub\PortableGit_c7e0cbde92ba565cb218a521411d0e854079a28c\mingw32\bin;C:\Program Files\apache-maven-3.3.9\bin;C:\Program Files\apache-tomcat-8.0.36\bin;C:\Program Files (x86)\apache-jmeter-3.1\bin;C:\Program Files (x86)\PuTTY\;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files\nodejs\;C:\Program Files\vault-cli-2.4.40-bin\vault-cli-2.4.40\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\CMake\bin;C:\Users\Karina\AppData\Roaming\npm
+10 verbose lifecycle vue-assistant-programmer@1.0.0~dev: CWD: D:\Users\Karina\Desktop\kurs\vue\vue-jwt-authentication
+11 silly lifecycle vue-assistant-programmer@1.0.0~dev: Args: [ '/d /s /c', 'webpack-dev-server --inline --hot' ]
+12 silly lifecycle vue-assistant-programmer@1.0.0~dev: Returned: code: 3221225786  signal: null
+13 info lifecycle vue-assistant-programmer@1.0.0~dev: Failed to exec dev script
+14 verbose stack Error: vue-assistant-programmer@1.0.0 dev: `webpack-dev-server --inline --hot`
+14 verbose stack Exit status 3221225786
+14 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid vue-assistant-programmer@1.0.0
+16 verbose cwd D:\Users\Karina\Desktop\kurs\vue\vue-jwt-authentication
+17 error Windows_NT 6.1.7601
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
+19 error node v6.10.0
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error vue-assistant-programmer@1.0.0 dev: `webpack-dev-server --inline --hot`
+22 error Exit status 3221225786
+23 error Failed at the vue-assistant-programmer@1.0.0 dev script 'webpack-dev-server --inline --hot'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the vue-assistant-programmer package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     webpack-dev-server --inline --hot
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs vue-assistant-programmer
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls vue-assistant-programmer
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

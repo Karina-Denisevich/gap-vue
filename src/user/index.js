@@ -68,5 +68,32 @@ export default {
                 reject(error)
             });
         });
+    },
+
+    deleteBookmark(context, userId, bookmarkId){
+        return new Promise(function (resolve, reject) {
+            context.$http.delete({
+                url: USERS_URL + userId + '/deleteBookmark/' + bookmarkId, method: 'DELETE', headers: auth.getAuthHeader()
+            }).then((data) => {
+                resolve(data)
+            }, error => {
+                reject(error)
+            });
+        });
+    },
+
+    updateBookmark(context, bookmarkToUpdate){
+        return new Promise(function (resolve, reject) {
+            context.$http.put({
+                url: USERS_URL + 'updateBookmark/' + bookmarkToUpdate.id,
+                method: 'PUT',
+                data: bookmarkToUpdate,
+                headers: auth.getAuthHeader()
+            }).then((data) => {
+                resolve(data)
+            }, error => {
+                reject(error)
+            });
+        });
     }
 }

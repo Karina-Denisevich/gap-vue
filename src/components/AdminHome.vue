@@ -22,7 +22,6 @@
                 headers: [
                     {title: 'Id', class: 'odd-table-element id-element'},
                     {title: 'Email', class: 'even-table-element editable-email'},
-                    {title: 'Password', class: 'odd-table-element editable-password'},
                     {title: 'Roles', class: 'even-table-element editable-roles'},
                     {title: 'Actions', class: 'odd-table-element'}
                 ],
@@ -48,12 +47,10 @@
                     let rowCopy = [];
 
                     rowCopy.push(item.username);
-                    rowCopy.push(item.password);
                     rowCopy.push(item.authorities);
 
                     row.push(item.id);
                     row.push(item.username);
-                    row.push(item.password);
                     row.push(item.authorities);
                     row.push('<button class="ui green button edit-btn" id="' + item.id + '">Edit</button>' +
                         '<button class="ui red button delete-btn" id="' + item.id + '">Delete</button>')
@@ -82,10 +79,8 @@
                             }, 3000);
                             for (var i = 0; i < vm.rows.length; i++) {
                                 if (item.id === vm.rows[i][0]) {
-                                    alert(vm.rowsCopy[i][0] + '  ' + item.username)
                                     vm.rowsCopy[i][0] = item.username;
-                                    vm.rowsCopy[i][1] = item.password;
-                                    vm.rowsCopy[i][2] = item.authorities;
+                                    vm.rowsCopy[i][1] = item.authorities;
                                     break;
                                 }
                             }

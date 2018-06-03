@@ -48,9 +48,7 @@ export default {
                 data: data,
                 headers: auth.getAuthHeader()
             }).then((data) => {
-                alert(JSON.stringify(data))
             }, error => {
-                alert('h')
                 reject(error)
             });
         });

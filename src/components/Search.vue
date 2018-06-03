@@ -75,8 +75,7 @@
                     }
                 ],
                 itemActions: [
-                    {name: 'view-item', label: '', icon: 'zoom icon', class: 'ui teal button'},
-                    {name: 'star-item', label: '', icon: 'star icon', class: 'ui orange button'}
+                    {name: 'view-item', label: '', icon: 'zoom icon', class: 'ui teal button'}
                 ]
             }
         },
@@ -103,7 +102,7 @@
                // }
             },
             'vuetable:load-error': function (response) {
-                alert('Load Error: ', response)
+                console.log("load error");
             },
             'vuetable:loading': function () {
                 console.log("load started");
